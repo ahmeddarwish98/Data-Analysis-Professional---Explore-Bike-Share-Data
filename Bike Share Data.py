@@ -233,7 +233,7 @@ def display_data(df):
     if answer == "yes":  
         while user_index < df.shape[0]:                     # df.shape[0] gives number of row count
             print(df.iloc[user_index:user_index+5])         # use iloc to Locate user index
-            answer = input("If you want to disply more data, please enter: [ yes or no ] ").lower()
+            answer = input("Again... If you want to disply more data, please enter: [ yes or no ] ").lower()
             user_index += 5
             if answer != "yes":
                print("Finally... we are finished.")
